@@ -1,0 +1,39 @@
+/*body { background-color: red;}*/
+
+#map {
+  position: absolute; top: 0px; left: 0px;
+  border-radius: 15px ;
+  width:  640px;
+  height: 480px;
+  /*border: 2px solid rgba(0,255,0,0.3);*/
+  border: none;
+  background-color: rgba(0,0,0,0.3);
+}
+
+#infoButton {
+  position:absolute;
+  bottom:20px;
+  right:20px;
+}
+#doneButton {
+  position:absolute;
+  bottom:20px;
+  right:30px;
+}
+
+#front {
+  display:block;
+}
+
+#back {
+  display:none;
+  background: url("Images/backside.png");
+  width:  628px;
+  height: 468px;
+  border: 2px solid rgba(0,0,0,0.3);
+  color: white;
+  border-radius: 15px;
+}
+#back .container {
+  margin: 10px;
+}
