@@ -1,18 +1,18 @@
 var versionNum = "0.1.0";
-var mapURL = "http://premium.accuweather.com/nx_mosaic_640x480c/re/inmare";
-// var mapURL = "http://sirocco.accuweather.com/nx_mosaic_640x480_public/sir/inmasir";
+// var mapURL = "http://sirocco.accuweather.com/nx_mosaic_640x480c/re/inmare";
+var mapURL = "http://sirocco.accuweather.com/nx_mosaic_640x480_public/sir/inmasir";
 
 function setup() {
   gDoneButton = new AppleGlassButton(document.getElementById("doneButton"), "Done", hidePrefs);
   gInfoButton = new AppleInfoButton(document.getElementById("infoButton"), document.getElementById("front"), "white", "white", showPrefs);
 
-  widget.onshow = refreshMap();
+  if (window.widget) {
+      widget.onhide = onhide;
+  }   widget.onshow = refreshMap;
 
   if (undefined === widget.preferenceForKey("currentLocation")){
     showPrefs();
   }
-
-  showPrefs();
 }
 
 function showPrefs() {

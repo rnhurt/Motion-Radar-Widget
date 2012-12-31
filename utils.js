@@ -7,7 +7,14 @@ function refreshMap(){
 
   // Update the map
   map.src=mapURL + currentLocation + ".gif";
+  alert("New map URL: " + map.src);
 }
+
+
+function onhide(){
+  alert("Hiding widget");
+}
+
 
 function updatePrefs(pref){
   // Get the current location
