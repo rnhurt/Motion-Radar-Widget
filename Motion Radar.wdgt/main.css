@@ -17,8 +17,8 @@
 }
 #doneButton {
   position:absolute;
-  bottom:20px;
-  right:30px;
+  top:180px;
+  left:340px;
 }
 
 #front {
@@ -28,12 +28,26 @@
 #back {
   display:none;
   background: url("Images/backside.png");
-  width:  628px;
-  height: 468px;
+  width:  400px;
+  height: 200px;
   border: 2px solid rgba(0,0,0,0.3);
   color: white;
   border-radius: 15px;
 }
 #back .container {
   margin: 10px;
+}
+#back .option{
+  padding: 10px;
+}
+#back .footer{
+  text-align: center;
+}
+#back .new_version{
+  display: none;
+  color:red;
+  font-size: bold;
+}
+#back a:visited{
+  color:red;
 }
